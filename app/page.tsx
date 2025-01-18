@@ -1,6 +1,7 @@
 // "use client";
 
 import Footer from "@/components/Footer";
+import MyNavbar from "@/components/Navigationbar";
 // import { Container } from "react-bootstrap";
 
 // import { useRouter } from "next/navigation";
@@ -13,6 +14,8 @@ export default function Home() {
   // }
 
   return (
+    <>
+    <MyNavbar />
     <div className="d-flex flex-column min-vh-100">
       <div className="mt-5">
         <h1>Home Page</h1>
@@ -20,6 +23,7 @@ export default function Home() {
       </div>
       <Footer />
     </div>
+    </>
   );
 }
 

@@ -1,4 +1,5 @@
 // import Container from "react-bootstrap/Container";
+import MyNavbar from "@/components/Navigationbar";
 import Footer from "../../components/Footer";
 import type { Metadata } from "next";
 
@@ -7,6 +8,8 @@ export const metadata: Metadata = {
 };
 function About() {
   return (
+    <>
+    <MyNavbar />
     <div className="d-flex flex-column min-vh-100">
       <div className="mt-5">
         <h1>About Me</h1>
@@ -14,6 +17,7 @@ function About() {
       </div>
       <Footer />
     </div>
+    </>
   );
 }
 
