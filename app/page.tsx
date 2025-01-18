@@ -1,19 +1,29 @@
-"use client";
+// "use client";
 
 import Footer from "@/components/Footer";
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
+
+// import { useRouter } from "next/navigation";
 
 export default function Home() {
+  // const router = useRouter();
+
+  // if (router.isFallback) {
+  //   return <div>Loading...</div>;
+  // }
+
   return (
     <div className="d-flex flex-column min-vh-100">
-      <Container className="mt-5">
+      <div className="mt-5">
         <h1>Home Page</h1>
         <p>Portfolio</p>
-      </Container>
+      </div>
       <Footer />
     </div>
   );
 }
+
+
 
 
 

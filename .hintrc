@@ -10,7 +10,8 @@
           "-webkit-text-size-adjust"
         ]
       }
-    ]
+    ],
+    "apple-touch-icons": "off"
   },
   "browserslist": [
     "defaults",
