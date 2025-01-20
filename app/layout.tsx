@@ -1,5 +1,4 @@
 // "use client";
-import MyNavbar from "@/components/Navigationbar";
 import "./globals.css";
 import type { Metadata } from "next";
 // import { BrowserRouter as Router, useLocation } from "react-router-dom";
@@ -75,23 +74,17 @@ export const metadata: Metadata = {
   description: "This is a description of my awesome website.",
   keywords: ["next.js", "react", "web development", "example"], // Keywords for SEO
   authors: [{ name: "Peter Eshak Abdo", url: "https://johndoe.com" }], // Author information
-  // icons: null,
-  icons: {
-    icon: "/favicon.ico", // Main favicon
-    apple: "/apple-touch-icon.png", // Apple touch icon
-    other: {
-      rel: "apple-touch-icon-precomposed",
-      url: "/apple-touch-icon-precomposed.png",
-    },
-    shortcut: "/favicon-16x16.png",
-  },
+  icons: null,
+  // icons: {
+  //   icon: "/favicon.ico", // Main favicon
+  //   apple: "/apple-touch-icon.png", // Apple touch icon
+  //   other: {
+  //     rel: "apple-touch-icon-precomposed",
+  //     url: "/apple-touch-icon-precomposed.png",
+  //   },
+  //   shortcut: "/favicon-16x16.png",
+  // },
   // viewport: "width=device-width, initial-scale=1",
-  alternates: {
-    canonical: "/", // Canonical URL for the page
-    languages: {
-      "en-US": "/en-US",
-    },
-  },
 };
 export const viewport = "width=device-width, initial-scale=1";
 export default function RootLayout({
@@ -116,7 +109,6 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <MyNavbar />
         {children}
       </body>
     </html>

@@ -2,35 +2,21 @@
 
 import Footer from "@/components/Footer";
 import MyNavbar from "@/components/Navigationbar";
-// import { Container } from "react-bootstrap";
-
-// import { useRouter } from "next/navigation";
+import HeaderContent from "./headerDiv/page";
+import About from "./about/page";
+// import Projects from "./projects/page";
+import Skills from "./skills/page";
 
 export default function Home() {
-  // const router = useRouter();
-
-  // if (router.isFallback) {
-  //   return <div>Loading...</div>;
-  // }
-
   return (
     <>
-    <MyNavbar />
-    <div className="d-flex flex-column min-vh-100">
-      <div className="mt-5">
-        <h1>Home Page</h1>
-        <p>Portfolio</p>
-      </div>
+      <MyNavbar />
+        <HeaderContent />
+        <About />
+        {/* <Projects /> */}
+        <Skills />
       <Footer />
-    </div>
     </>
   );
 }
-
-
-
-
-
-
-
 
