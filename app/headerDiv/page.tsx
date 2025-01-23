@@ -14,7 +14,7 @@ function HeaderContent() {
           <p>A web developer and Front-end developer.</p>
         </div>
         <div className="float-end">
-          <Image src={pic} className="rounded" alt="Profile Pic" />
+          <Image src={pic} className="rounded img-thumbnail" alt="Profile Pic" />
         </div>
       </div>
     </>
@@ -22,4 +22,5 @@ function HeaderContent() {
 }
 
 export default HeaderContent;
+
 

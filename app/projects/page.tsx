@@ -37,6 +37,38 @@ function Projects() {
             linkCode="https://github.com/Peter-Eshak-Abdo/Abona-Faltaos"
             linkHosting="https://abona-faltaos.web.app/"
           />
+          <ProjectsCard title="udemy_shop" text="Shop project for Udemy course" linkCode="https://github.com/PeterEshak/udemy_shop" linkHosting="" />
+          <ProjectsCard
+            title="Curricula"
+            text="Personal Project for Primary Curricula"
+            linkCode="https://github.com/PeterEshak/Curricula"
+            linkHosting=""
+          />
+          <ProjectsCard
+            title="CV"
+            text="Personal Project for First CV"
+            linkCode=""
+            linkHosting="https://peter-eshak.blogspot.com/2020/10/blog-post.html"
+          />
+          <ProjectsCard
+            title="Youtube Channel"
+            text="My Youtube Channel"
+            linkCode=""
+            linkHosting="https://www.youtube.com/channel/UCdt02aWMr-mlqM2eC8A_brg"
+          />
+          <ProjectsCard title="كورس HTML" text="First blog" linkCode="" linkHosting="https://peter-eshak.blogspot.com/2020/12/html.html" />
+          <ProjectsCard
+            title="كورس Adobe illustrator"
+            text="Second Blog"
+            linkCode=""
+            linkHosting="https://peter-eshak.blogspot.com/2020/12/adobe-illustrator-cc-aylastrytvr-css.html"
+          />
+          <ProjectsCard
+            title="Github"
+            text="Github README page"
+            linkCode="https://github.com/Peter-Eshak-Abdo/Peter-Eshak-Abdo"
+            linkHosting="https://github.com/Peter-Eshak-Abdo"
+          />
         </div>
       </div>
     </>
@@ -44,6 +76,8 @@ function Projects() {
 }
 
 export default Projects;
+
+
 
 
 
