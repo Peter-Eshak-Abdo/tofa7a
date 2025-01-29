@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <>
       <MyNavbar />
-        <HeaderContent />
-        <About />
-        <Projects />
-        <Skills />
+      <HeaderContent />
+      <About />
+      <Projects />
+      <Skills />
       <Footer />
     </>
   );

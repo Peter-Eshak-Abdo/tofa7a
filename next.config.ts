@@ -10,10 +10,13 @@ module.exports = {
   },
 };
 const nextConfig: NextConfig = {
+  reactStrictMode: true,
   /* config options here */
 };
 // module.exports = {
 //   output: 'export',
 // }
+
+// next.config.ts
 
 export default nextConfig;
