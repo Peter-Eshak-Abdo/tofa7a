@@ -1,8 +1,19 @@
 "use client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+// import React, { useState, useEffect } from "react";
 
 const MyNavbar = () => {
+// const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+
+// useEffect(() => {
+//   document.body.dataset.bsTheme = theme; // Apply theme to body
+//   localStorage.setItem("theme", theme); // Save theme to localStorage
+// }, [theme]);
+
+// const toggleTheme = () => {
+//   setTheme(theme === "light" ? "dark" : "light");
+// };
   const router = useRouter();
 
   const isActive = (pathname) => {
@@ -10,7 +21,7 @@ const MyNavbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg sticky-top rounded-5 pe-3 bg-primary-subtle shadow-lg opacity-75">
+    <nav className="navbar navbar-expand-lg fixed-top rounded-5 pe-3 bg-primary-subtle shadow-lg opacity-75">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           Tofa7a
@@ -30,12 +41,12 @@ const MyNavbar = () => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className={`nav-item ${isActive("/")}`}>
               <Link href="/" className="nav-link">
-                #Home
+                #Peter Eshak
               </Link>
             </li>
-            <li className={`nav-item ${isActive("/about")}`}>
-              <Link href="/about" className="nav-link">
-                #About
+            <li className={`nav-item ${isActive("/personalData")}`}>
+              <Link href="/personalData" className="nav-link">
+                #PersonalData
               </Link>
             </li>
             <li className={`nav-item ${isActive("/projects")}`}>
@@ -43,12 +54,34 @@ const MyNavbar = () => {
                 #Projects
               </Link>
             </li>
-            <li className={`nav-item ${isActive("/skills")}`}>
-              <Link href="/skills" className="nav-link">
-                #Skills
+            <li className={`nav-item ${isActive("/proLang")}`}>
+              <Link href="/projects" className="nav-link">
+                #Programming Languages
+              </Link>
+            </li>
+            <li className={`nav-item ${isActive("/certifications")}`}>
+              <Link href="/certifications" className="nav-link">
+                #Certifications
               </Link>
             </li>
           </ul>
+          {/* <button className="btn btn-primary" onClick={toggleTheme}>{theme === "light" ? "Switch to Dark Mode" : "Switch to Light Mode"}</button> */}
+          {/* <div className="form-check form-switch mx-2">
+            <label
+              htmlFor="checkTheme text-body"
+              className="text-white">
+              Dark Mode
+            </label>
+            <input
+              type="checkbox"
+              className="form-check-input p-2"
+              title="Theme Mode"
+              role="switch"
+              id="checkTheme flexSwitchCheckChecked"
+              // checked
+              onClick={myFunction()}
+            />
+          </div> */}
         </div>
       </div>
     </nav>
@@ -56,4 +89,23 @@ const MyNavbar = () => {
 };
 
 export default MyNavbar;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
