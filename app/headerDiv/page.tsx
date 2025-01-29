@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import pic from "@/public/images/pic.jpg";
+// import Image from "next/image";
+// import pic from "./images/pic.jpg";
 
 export const metadata: Metadata = {
   title: "About-Portfolio", // Overrides the global title template
@@ -14,7 +14,8 @@ function HeaderContent() {
           <p>A web developer and Front-end developer.</p>
         </div>
         <div className="float-end">
-          <Image src={pic} className="rounded img-thumbnail" alt="Profile Pic" />
+          {/* <Image src={pic} className="rounded img-thumbnail" alt="Profile Pic" /> */}
+          <img src="./images/pic.jpg" alt="Profile Pic" />
         </div>
       </div>
     </>
@@ -22,5 +23,10 @@ function HeaderContent() {
 }
 
 export default HeaderContent;
+
+
+
+
+
 
 
