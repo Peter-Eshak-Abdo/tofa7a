@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import pic from "@/src/images/pic.jpg";
+import pic from "@/public/images/pic.jpg";
 
 export const metadata: Metadata = {
   title: "About-Portfolio", // Overrides the global title template
