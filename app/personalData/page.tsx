@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: "About-Portfolio", // Overrides the global title template
@@ -49,20 +50,17 @@ function PersonalData() {
         </p>
         <p className="my-4 fs-1 fw-bolder text-primary-emphasis">
           <a className="text-body" href="https://wa.me/message/AOH44Q2TY3H2E1" title="Whatsapp">
-            <i className="bi bi-whatsapp text-success">
-              Whatsapp
-            </i>
+            <i className="bi bi-whatsapp text-success">Whatsapp</i>
           </a>
         </p>
       </div>
       <div className="d-flex justify-content-end">
-        <img src="./images/pic.jpg" className="rounded img-thumbnail w-100" style={{ maxHeight: "90vh" }} alt="Profile Pic" />
+        {/* <img src="./images/pic.jpg" className="rounded img-thumbnail w-100" style={{ maxHeight: "90vh" }} alt="Profile Pic" /> */}
+        <Image src="/images/pic.jpg" className="rounded img-thumbnail w-100" style={{ maxHeight: "90vh" }} alt="Profile Pic" width={500} height={500} />
       </div>
     </div>
   );
 }
 
 export default PersonalData;
-
-
 

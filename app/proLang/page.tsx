@@ -7,11 +7,8 @@ export const metadata: Metadata = {
 function ProgrammingLanguages() {
   return (
     <>
-      <div className="container d-flex flex-column min-vh-100">
-        <div className="mt-5">
+      <div className="container d-flex flex-column min-vh-100 mt-5">
           <h1>Programming Languages</h1>
-          {/* <p>A showcase of my recent work.</p> */}
-        </div>
         <ProgLangCard />
       </div>
     </>
