@@ -71,7 +71,7 @@ const ProgLangCard: React.FC = () => {
   return (
     <div className="d-flex flex-row justify-content-evenly align-self-center align-content-around flex-wrap" id="progLang">
       {proLangs.map((proLang, index) => (
-        <div className="card m-4" style={{ width: "19rem" }} key="projects-container">
+        <div className="card m-4" style={{ width: "19rem" }} key={`proLang-container-${index}`}>
           <div className="card-body" key={`pro-lang-${index}`}>
             <h5 className="card-title text-center fw-bold fs-3 pb-3">{proLang.name}</h5>
             <p className="card-text fs-5">{proLang.description}</p>
@@ -99,6 +99,7 @@ const ProgLangCard: React.FC = () => {
                 <div className="progress-bar bg-danger progress-bar-striped progress-bar-animated">{100 - Number(proLang.ability)}%</div>
               </div>
             </div>
+                <p className="card-text fs-5"><b>IDK: </b>{proLang.IDK}</p>
           </div>
         </div>
       ))}

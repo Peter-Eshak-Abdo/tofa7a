@@ -66,21 +66,31 @@ const projects = [
     link: "https://github.com/Peter-Eshak-Abdo",
   },
 ];
-
 const ProjectsCard: React.FC = () => {
-  return (<div className="d-flex flex-row justify-content-evenly align-self-center align-content-around flex-wrap" id="projects">
-    {projects.map((project, index) => (
-        <div className="card m-4" style={{ width: "19rem" }} key="projects-container">
-        <div className="card-body" key={`project-${index}`}>
-          <h5 className="card-title text-center fw-bold fs-3 pb-3">{project.title}</h5>
-          <p className="card-text fs-5">{project.description}</p>
-          <a href={project.src} className="btn btn-outline-primary mx-lg-3 mx-sm-2" target="_blank" rel="noopener noreferrer">
-            Source Code
-          </a>
-          <a href={project.link} className="btn btn-outline-info" target="_blank" rel="noopener noreferrer">
-            Website Link
-          </a>
-        </div>
+  return (
+    <div className="d-flex flex-row justify-content-evenly align-self-center align-content-around flex-wrap" id="projects">
+      {projects.map((project, index) => (
+        <div className="card m-4" style={{ width: "19rem" }} key={`project-container-${index}`}>
+          <div className="card-body" key={`project-${index}`}>
+            <h5 className="card-title text-center fw-bold fs-3 pb-3">{project.title}</h5>
+            <p className="card-text fs-5">{project.description}</p>
+            <a
+              href={project.src}
+              className={project.src === "" ? "btn btn-primary disabled mx-lg-3 mx-sm-2" : "btn btn-outline-primary mx-lg-3 mx-sm-2"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source Code
+            </a>
+            <a
+              href={project.link}
+              className={project.link === "" ? "btn btn-info disabled" : "btn btn-outline-info"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website Link
+            </a>
+          </div>
         </div>
       ))}
     </div>
