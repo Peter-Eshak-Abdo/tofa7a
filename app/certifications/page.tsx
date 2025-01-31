@@ -4,7 +4,7 @@ import CertificationCarousel from "@/components/CertificateCarousel";
 export const metadata: Metadata = {
   title: "Certification-Portfolio", // Overrides the global title template
 };
-function Certification() {
+function Certifications() {
   return (
     <>
       <div className="container d-flex flex-column min-vh-100 mt-3">
@@ -32,6 +32,7 @@ function Certification() {
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12" aria-label="Slide 13"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13" aria-label="Slide 14"></button>
             </div>
             {/* <div className="carousel-inner">
               <div className="carousel-item">
@@ -250,5 +251,5 @@ function Certification() {
   );
 }
 
-export default Certification;
+export default Certifications;
 

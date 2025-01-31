@@ -5,7 +5,7 @@ import HeaderContent from "./headerDiv/page";
 import PersonalData from "./personalData/page";
 import Projects from "./projects/page";
 import ProgrammingLanguages from "./proLang/page";
-import Certification from "./certifications/page";
+import Certifications from "./certifications/page";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
       <Projects />
       <hr className="container border border-primary border-3 opacity-50 mt-5 mb-5" />
       <ProgrammingLanguages />
-      <Certification />
+      <Certifications />
       <Footer />
     </>
   );

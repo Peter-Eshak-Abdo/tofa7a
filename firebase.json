@@ -9,8 +9,9 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "@/app/page.tsx"
+        "destination": "/index.html"
       }
     ]
   }
 }
+

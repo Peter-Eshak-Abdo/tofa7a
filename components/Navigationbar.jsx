@@ -55,7 +55,7 @@ const MyNavbar = () => {
               </Link>
             </li>
             <li className={`nav-item ${isActive("/proLang")}`}>
-              <Link href="/projects" className="nav-link">
+              <Link href="/proLang" className="nav-link">
                 #Programming Languages
               </Link>
             </li>
