@@ -6,6 +6,24 @@ const projects = [
     link: "https://peter-eshak-abdo.github.io/Netlab-Course",
   },
   {
+    title: "NEXT",
+    description: "Clone Next generation page",
+    src: "https://github.com/Peter-Eshak-Abdo/websiteTest/",
+    link: "https://website-frond-end.web.app/",
+  },
+  {
+    title: "Random Product",
+    description: "Every Reload page that generate a random number of product",
+    src: "https://github.com/Peter-Eshak-Abdo/websiteTest/blob/lifeline/public/js/array.js",
+    link: "https://website-frond-end.web.app/site/array.html",
+  },
+  {
+    title: "Lifeline",
+    description: "Clone Lifeline page",
+    src: "https://github.com/Peter-Eshak-Abdo/websiteTest/blob/lifeline/",
+    link: "https://website-frond-end.web.app/site/lifeline.html",
+  },
+  {
     title: "MoveOn",
     description: "Collage Section Project With Team of 3 girls in second Year and fisrt Semester",
     src: "https://github.com/Peter-Eshak-Abdo/MoveOn",
@@ -98,6 +116,7 @@ const ProjectsCard: React.FC = () => {
 };
 
 export default ProjectsCard;
+
 
 
 

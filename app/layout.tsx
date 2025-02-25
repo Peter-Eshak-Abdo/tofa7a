@@ -135,9 +135,29 @@ export default function RootLayout({
           crossOrigin="anonymous"
           defer
         />
+        <link rel="manifest" id="manifest-placeholder" href="./manifest.webmanifest" />
+        <script>
+          {`
+            if ("serviceWorker" in navigator) {
+              window.addEventListener("load", async () => {
+                try {
+                  const registration = await navigator.serviceWorker.register("sw.js");
+                  console.log("Service worker registered for scope", registration.scope);
+                } catch (err) {
+                    if (err instanceof Error) {
+                    console.error(err.name, err.message);
+                  } else {
+                    console.error(err);
+                  }
+                }
+              });
+            }
+        `}
+        </script>
       </head>
       <body>{children}</body>
     </html>
   );
 }
+
 

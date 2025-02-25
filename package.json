@@ -1,6 +1,6 @@
 {
   "name": "tofa7a",
-  "version": "0.1.0",
+  "version": "1.5.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "deploy":  "rm -rf out/* && npm run build && firebase deploy"
+    "deploy": "rm -rf out/* && npm run build && firebase deploy"
   },
   "dependencies": {
     "firebase": "^11.1.0",
@@ -16,6 +16,7 @@
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.7",
     "react-dom": "^19.0.0",
+    "react-manifest": "^1.0.5",
     "react-router-dom": "^7.1.1"
   },
   "devDependencies": {
@@ -28,6 +29,3 @@
     "typescript": "^5"
   }
 }
-
-
-
