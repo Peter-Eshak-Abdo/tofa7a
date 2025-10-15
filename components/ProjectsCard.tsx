@@ -8,8 +8,8 @@ const projects = [
   {
     title: "elnosor-members",
     description: "Had to be a REAL Attendenc Church (تسجيل حضور المخدومين في اجتماع الكنيسة)System with Nextjs and Firebase for Google Auth and Firestore database , Vercel for Deployment with free domin and hosting, Tailwind with Shadcn for modern UI Style, TypeScript, Node for back-end and api for the tow accsess point (Admin الخادم and Members المخدوم), PWA for mobile and Desktop app, Onesignal for notification with github action to run corn to puch schuduel notification every 12 menite.",
-    src: "https://github.com/Peter-Eshak-Abdo/Netlab-Course",
-    link: "https://peter-eshak-abdo.github.io/Netlab-Course",
+    src: "https://github.com/Peter-Eshak-Abdo/elnosor-members",
+    link: "https://member-elnosor.vercel.app/",
   },
   {
     title: "Netlab-Course",
