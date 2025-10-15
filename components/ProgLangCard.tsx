@@ -98,9 +98,9 @@ const ProgLangCard: React.FC = () => {
                 className="progress"
                 role="progressbar"
                 aria-label={`Progress for ${proLang.name}: ${proLang.ability}%`}
-                aria-valuenow={proLang.ability}
-                aria-valuemin="0"
-                aria-valuemax="100"
+                aria-valuenow={Number(proLang.ability)}
+                aria-valuemin={0}
+                aria-valuemax={100}
                 style={{ width: `${Number(proLang.ability)}%` }}
               >
                 <div className="progress-bar bg-success progress-bar-striped progress-bar-animated">{proLang.ability}%</div>
@@ -109,9 +109,9 @@ const ProgLangCard: React.FC = () => {
                 className="progress"
                 role="progressbar"
                 aria-label={`Remaining progress for ${proLang.name}: ${100 - parseInt(proLang.ability)}%`}
-                aria-valuenow={String(100 - parseInt(proLang.ability))}
-                aria-valuemin="0"
-                aria-valuemax="100"
+                aria-valuenow={100 - Number(proLang.ability)}
+                aria-valuemin={0}
+                aria-valuemax={100}
                 style={{ width: `${100 - Number(proLang.ability)}%` }}
               >
                 <div className="progress-bar bg-danger progress-bar-striped progress-bar-animated">{100 - Number(proLang.ability)}%</div>
