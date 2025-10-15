@@ -1,23 +1,12 @@
 "use client";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-// import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const MyNavbar = () => {
-// const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const pathname = usePathname();
 
-// useEffect(() => {
-//   document.body.dataset.bsTheme = theme; // Apply theme to body
-//   localStorage.setItem("theme", theme); // Save theme to localStorage
-// }, [theme]);
-
-// const toggleTheme = () => {
-//   setTheme(theme === "light" ? "dark" : "light");
-// };
-  const router = useRouter();
-
-  const isActive = (pathname) => {
-    return router.pathname === pathname ? "active" : "";
+  const isActive = (path: string) => {
+    return pathname === path ? "active" : "";
   };
 
   return (
@@ -65,23 +54,6 @@ const MyNavbar = () => {
               </Link>
             </li>
           </ul>
-          {/* <button className="btn btn-primary" onClick={toggleTheme}>{theme === "light" ? "Switch to Dark Mode" : "Switch to Light Mode"}</button> */}
-          {/* <div className="form-check form-switch mx-2">
-            <label
-              htmlFor="checkTheme text-body"
-              className="text-white">
-              Dark Mode
-            </label>
-            <input
-              type="checkbox"
-              className="form-check-input p-2"
-              title="Theme Mode"
-              role="switch"
-              id="checkTheme flexSwitchCheckChecked"
-              // checked
-              onClick={myFunction()}
-            />
-          </div> */}
         </div>
       </div>
     </nav>
@@ -89,23 +61,3 @@ const MyNavbar = () => {
 };
 
 export default MyNavbar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

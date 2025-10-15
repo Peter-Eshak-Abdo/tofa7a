@@ -1,5 +1,17 @@
 const projects = [
   {
+    title: "Abona-Faltaus",
+    description: "The REAL project Nextjs with Firebase for Google Auth and Firestore database , Vercel for Deployment with free domin and hosting, Tailwind with Shadcn for modern UI Style, TypeScript, Node for back-end , PWA for mobile and Desktop app.",
+    src: "https://github.com/Peter-Eshak-Abdo/abona-faltaus",
+    link: "https://abona-faltaus.vercel.app/",
+  },
+  {
+    title: "elnosor-members",
+    description: "Had to be a REAL Attendenc Church (تسجيل حضور المخدومين في اجتماع الكنيسة)System with Nextjs and Firebase for Google Auth and Firestore database , Vercel for Deployment with free domin and hosting, Tailwind with Shadcn for modern UI Style, TypeScript, Node for back-end and api for the tow accsess point (Admin الخادم and Members المخدوم), PWA for mobile and Desktop app, Onesignal for notification with github action to run corn to puch schuduel notification every 12 menite.",
+    src: "https://github.com/Peter-Eshak-Abdo/Netlab-Course",
+    link: "https://peter-eshak-abdo.github.io/Netlab-Course",
+  },
+  {
     title: "Netlab-Course",
     description: "That was offline course",
     src: "https://github.com/Peter-Eshak-Abdo/Netlab-Course",
@@ -116,9 +128,3 @@ const ProjectsCard: React.FC = () => {
 };
 
 export default ProjectsCard;
-
-
-
-
-
-

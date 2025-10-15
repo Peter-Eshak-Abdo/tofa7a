@@ -33,7 +33,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-, "components/Navigationbar.jsx"  ],
+, "components/Navigationbar.tsx"  ],
   "exclude": [
     "node_modules"
   ]

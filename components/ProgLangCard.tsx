@@ -21,13 +21,25 @@ const proLangs = [
     name: "React",
     description: "it's an Framwork JS",
     ability: "40",
-    IDK: "Hooks, Next",
+    IDK: "Hooks,",
+  },
+  {
+    name: "Next.js",
+    description: "it's an Liberary React",
+    ability: "85",
+    IDK: "SSR",
   },
   {
     name: "Bootstrap",
     description: "it's an Framwork CSS",
     ability: "100",
     IDK: "",
+  },
+  {
+    name: "Tailwind with Shad.cn",
+    description: "it's UI styling framework",
+    ability: "60",
+    IDK: "tailwind classes",
   },
   {
     name: "SASS & SCSS",
@@ -40,6 +52,12 @@ const proLangs = [
     description: "it's an Structuer language",
     ability: "80",
     IDK: "",
+  },
+  {
+    name: "Node.js",
+    description: "it's Back-end JS",
+    ability: "20",
+    IDK: "alots",
   },
   {
     name: "Java",
@@ -79,10 +97,10 @@ const ProgLangCard: React.FC = () => {
               <div
                 className="progress"
                 role="progressbar"
-                aria-label="Segment one Animated striped"
-                aria-valuenow={Number(proLang.ability)}
-                aria-valuemin={0}
-                aria-valuemax={100}
+                aria-label={`Progress for ${proLang.name}: ${proLang.ability}%`}
+                aria-valuenow={proLang.ability}
+                aria-valuemin="0"
+                aria-valuemax="100"
                 style={{ width: `${Number(proLang.ability)}%` }}
               >
                 <div className="progress-bar bg-success progress-bar-striped progress-bar-animated">{proLang.ability}%</div>
@@ -90,16 +108,16 @@ const ProgLangCard: React.FC = () => {
               <div
                 className="progress"
                 role="progressbar"
-                aria-label="Segment two Animated striped"
-                aria-valuenow={100 - Number(proLang.ability)}
-                aria-valuemin={0}
-                aria-valuemax={100}
+                aria-label={`Remaining progress for ${proLang.name}: ${100 - parseInt(proLang.ability)}%`}
+                aria-valuenow={String(100 - parseInt(proLang.ability))}
+                aria-valuemin="0"
+                aria-valuemax="100"
                 style={{ width: `${100 - Number(proLang.ability)}%` }}
               >
                 <div className="progress-bar bg-danger progress-bar-striped progress-bar-animated">{100 - Number(proLang.ability)}%</div>
               </div>
             </div>
-                <p className="card-text fs-5"><b>IDK: </b>{proLang.IDK}</p>
+            <p className="card-text fs-5"><b>IDK: </b>{proLang.IDK}</p>
           </div>
         </div>
       ))}
@@ -108,4 +126,3 @@ const ProgLangCard: React.FC = () => {
 };
 
 export default ProgLangCard;
-

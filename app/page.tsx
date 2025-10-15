@@ -1,5 +1,3 @@
-// "use client";
-
 import MyNavbar from "@/components/Navigationbar";
 import HeaderContent from "./headerDiv/page";
 import PersonalData from "./personalData/page";

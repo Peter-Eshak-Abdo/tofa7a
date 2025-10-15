@@ -2,9 +2,22 @@ import type { Metadata } from "next";
 // import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: "About-Portfolio", // Overrides the global title template
+  title: "About-Portfolio",
 };
 function PersonalData() {
+  const calculateAge = (birthDate: string) => {
+    const today = new Date();
+    const birth = new Date(birthDate);
+    let age = today.getFullYear() - birth.getFullYear();
+    const monthDiff = today.getMonth() - birth.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+      age--;
+    }
+    return age;
+  };
+
+  const age = calculateAge('2005-05-14');
+
   return (
     <div className="container d-lg-flex flex-row justify-content-between d-sm-block" id="personalData">
       <div className="d-flex flex-column align-content-end my-2 fs-3">
@@ -12,7 +25,7 @@ function PersonalData() {
           <b>Name:</b> Peter Eshak Abdo
         </p>
         <p className="my-4">
-          <b>Age:</b> 19 Years
+          <b>Age:</b> {age} Years
         </p>
         <p className="my-4">
           <b>Address:</b> Algam3yat st-Alabrag
@@ -23,9 +36,9 @@ function PersonalData() {
         <p className="my-4 mb-5">
           <b>Current Job:</b> Trainner at CopyCat Center
         </p>
-        {/*  <p className="my-3"><b>Relagin: </b>Christan Arthothikcy</p>
-         <p className="my-3"><b>Height:</b> 183 CM</p>
-        <p className="my-3"><b>Weight:</b> 64 Kg</p>  */}
+        <p className="my-3"><b>Relagin: </b>Christan Arthothikcy</p>
+        <p className="my-3"><b>Height:</b> 183 CM</p>
+        <p className="my-3"><b>Weight:</b> 64 Kg</p>
         <p className="my-4 mt-5">
           <b>Phone:</b>{" "}
           <a href="tel:01221331602" className="text-decoration-none link-opacity-50-hover">
@@ -38,8 +51,8 @@ function PersonalData() {
         </p>
         <p className="my-4">
           <b>Email:</b>{" "}
-          <a href="mailto:petereshak11gmail.com" className="text-decoration-none link-opacity-50-hover">
-            petereshak11gmail.com
+          <a href="mailto:petereshak11@gmail.com" className="text-decoration-none link-opacity-50-hover">
+            petereshak11@gmail.com
           </a>
         </p>
         <p className="my-4">
